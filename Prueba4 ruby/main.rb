@@ -33,15 +33,28 @@
 #    else
 #        puts "invalid calification"
 #end
-
-fruits = ['apple','pear','grape']
+#fruits = ['apple','pear','grape']
 #fruits.each do |fruit| 
 #    puts fruit
 #end
-puts fruits.sort.join(',')
-
-puts fruits.include?('grape')
-
-(1..5).each do |number|
-    puts "the nunmer is #{number}" 
+#puts fruits.sort.join(',')
+#puts fruits.include?('grape')
+#(1..5).each do |number|
+#    puts "the nunmer is #{number}" 
+#end
+#i=0
+#begin
+#    puts "i is #{i}"
+#    i+=1
+#end while i<10
+#5.times do
+# puts "hello"
+#end
+#10.downto(5) do |value|
+#    puts value
+#end
+person = { "name" => "juan", "age" => 26,}
+    puts person["age"]
+person.each do |key,value|
+    puts "the key is #{key} and the value is #{value}"
 end
