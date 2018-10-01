@@ -53,8 +53,56 @@
 #10.downto(5) do |value|
 #    puts value
 #end
-person = { "name" => "juan", "age" => 26,}
-    puts person["age"]
-person.each do |key,value|
-    puts "the key is #{key} and the value is #{value}"
+#person = { name: "juan", age: 26}
+#person.each do |key,value|
+#    puts "the key is #{key} and the value is #{value}"
+#end
+#puts person.length
+#puts person.has_key?(:age)
+
+
+#def square(number)
+#    return number*=number
+#end    
+
+#puts "Inser a number"
+#my_number=gets.chomp.to_f
+#puts "El cuadrado es #{square(my_number)}"
+
+#def hello_people(*people)
+#    people.each do |person|
+#        puts "hello #{person}"
+#    end
+#end         
+
+#hello_people('Juan','Pedro','Carlos','Maria')
+
+#def sum(number_one,number_two)
+#    return number_one+number_two
+#end
+#
+#puts sum(5,4)
+#
+#def sum(number_one)
+#    return number_one+5
+#end
+#
+#puts sum(10)
+#
+class Person 
+
+    attr_accessor :name,:age
+
+    def initialize(n,a)
+        self.name = n
+        self.age = a
+    end    
 end
+
+class Student < Person 
+
+end
+
+person1 = Person.new("cristhian",20)
+student1 = Student.new("Cristhian",20)
+puts student1.name
