@@ -1,0 +1,18 @@
+Comandos rails:
+rails new sitio <- crear nuevo proyecto
+rails generete controller bienvenido index <- crear pagina de inicio
+rails generate model Tarea titulo:string descripcion:text <- creacion de la base de datos (Nombre de la Tabla en Plural y la primera Mayuscula)
+rails db:migrate<- migrar la base de datos
+rails generete controller bienvenido index <- crear pagina de tareas
+
+Adicional copiar el archivo de bootstrap.css al proyecto por esta ruta:
+app/assets/stylesheets
+
+Comandos git:
+git add . <- actulizar los documentos
+git status <- estado de los archivos del proyecto
+git commit -m "Version" <- Asignar version a los archivos
+git config --local user.name "Nombre" <- nombre de usuario
+git config --local user.email "Email" <- correo de usuario
+por ultimo pegar la ruta que nos provee GitHub
+

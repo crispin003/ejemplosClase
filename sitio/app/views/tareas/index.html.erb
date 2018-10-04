@@ -1,4 +1,15 @@
-<h1>Tareas#index</h1>
-<lu>
-    <li><%= @tareas.titulo%></li>
-</lu>
+<h1>Mis tareas</h1>
+<table class="table">
+<thead class="thead-dark">
+    <th>Tarea</th>
+    <th>Editar</th>
+    <th>Eliminar</th>
+</thead>
+<% @tareas.each do |tarea|%>
+<tr>
+<td><%= link_to tarea.titulo,{controller:"tareas" ,action:"show", id:tarea.id}%></td>
+<td><%= link_to "editar",{controller:"tareas" ,action:"edit" ,id:tarea.id},data:{confirm:"¿Estas seguro?"} , method: "edit", class:"btn btn-warning"%></td>
+<td><%= link_to "eliminar",{controller:"tareas" ,action:"destroy" ,id:tarea.id},data:{confirm:"¿Estas seguro?"} , method: "delete", class:"btn btn-danger"%></td>
+</tr>
+<%end%>
+</table>
