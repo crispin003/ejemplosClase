@@ -23,7 +23,12 @@ class TareasController < ApplicationController
 
   def edit
     @tarea= Tarea.find(params[:id])
-    
+  end
+
+  def update
+    @tarea= @tarea.find(params[:id])
+    @tarea.update(titulo: params[:tarea][:titulo],descripcion[:tarea]:descripcion[])    
+    redidect_to @tarea
   end
 
   def destroy
