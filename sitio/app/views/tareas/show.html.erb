@@ -6,3 +6,6 @@
      <p><%= @tarea.descripcion%></p>
     </div>
 </div>
+<% unless @tarea.usuario.nil?  %>
+<p><%= @tarea.usuario.email %></p>
+<% end %>

@@ -1,4 +1,10 @@
 <h1>Welcome#index</h1>
+<% if usuario_signed_in? %>
+<p>Bienvenido <%= current_usuario.email %></p>
+<% else %>
+<p>Bienvenidos a mi sitio</p>
+<% end %>
+
 <lu>
     <li><%= @tareas%></li>
 </lu>
