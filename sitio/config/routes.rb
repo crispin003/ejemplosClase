@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :tareas do
+    resources :comentarios
+  end
   devise_for :usuarios
-  resources :tareas
   #get 'tareas',to: 'tareas#index'
   #get 'tareas/new',to: 'tareas#new'
   #post 'tareas',to: 'tareas#create'

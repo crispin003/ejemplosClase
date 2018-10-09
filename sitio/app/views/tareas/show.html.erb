@@ -9,3 +9,13 @@
 <% unless @tarea.usuario.nil?  %>
 <p><%= @tarea.usuario.email %></p>
 <% end %>
+<% unless @tarea.usuario.nil?  %>
+<p>Escrito por: <%= @tarea.usuario.email %></p>
+<% end %>
+<h3>Agregar comentarios</h3>
+<%= render "comentarios/form" %>
+<ul>
+<% @tarea.comentarios.each do |comentario| %>
+<li> <%= comentario.contenido %> </li>
+<% end %>
+</ul>
